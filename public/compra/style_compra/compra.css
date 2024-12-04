@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    justify-content: center;
+}
+
+.navbar2 {
+    position: relative;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 120px;
+    right: 63.5px;
+}
+
+.nav-med ul{
+    justify-content: center;
+    gap: 100px;
+}
+
+.card-venda {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.card-v {
+    width: 9.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card-v img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content-v h3 {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
