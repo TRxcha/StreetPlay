@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- Declaração do tipo de documento e definição do idioma como português do Brasil -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, garantindo suporte a caracteres especiais. -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para responsividade em dispositivos móveis, permitindo que a página se ajuste à largura da tela. -->
+    
     <title>Configurações - StreetPlay</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Título da página que aparece na aba do navegador. -->
 
+    <link rel="stylesheet" href="/public/ERRconfiguracoes/style_config.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o framework CSS Bootstrap, que fornece estilos e componentes prontos para uso. -->
 </head>
+
 <body>
-    <div class="settings-header">
-        <h5>Configurações</h5>
-    </div>
- 
+    <!-- Início do corpo da página -->
+
+    <header>
+        <nav class="navbar-not"> <!-- Barra de navegação personalizada -->
+            <a class="navbar-brand" href="/public/inicial/index.html"> <!-- Link para a página inicial -->
+                <ion-icon name="chevron-back-outline"></ion-icon> <!-- Ícone de voltar utilizando Ionicons -->
+            </a>
+            <div class="title-cont">
+                <h3 class="title-not"> <!-- Título da seção de navegação -->
+                    Configurações
+                </h3>    
+            </div>
+        </nav>
+    </header>
+
     <div class="container mt-3">
+        <!-- Contêiner principal com margem superior de 3 unidades (mt-3) -->
+        
         <div class="card settings-card">
+            <!-- Cartão para agrupar as configurações de forma organizada -->
             <div class="card-body">
+                <!-- Corpo do cartão onde os conteúdos são exibidos -->
                 <div class="d-flex align-items-center">
-                    <img src="path_to_logo.png" alt="StreetPlay Logo" class="me-3" width="40">
+                    <img src="/public/inicio/img_logo.png" alt="StreetPlay Logo" class="me-3" width="40">
+                    <!-- Imagem do logo do aplicativo, com margem à direita (me-3) e largura definida de 40 pixels. -->
                     <span class="settings-title">StreetPlay</span>
+                    <!-- Nome do aplicativo (StreetPlay). -->
                 </div>
                 <hr>
+                <!-- Linha horizontal para separar seções dentro do cartão -->
+                
                 <div class="mb-3">
                     <h6>Configurações da conta</h6>
+                    <!-- Subtítulo para a seção "Configurações da conta" -->
                     <ul class="list-unstyled">
+                        <!-- Lista não ordenada sem estilo padrão -->
                         <li>
                             <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none">
                                 <span>Alterar a senha</span>
                                 <i class="bi bi-chevron-right"></i>
+                                <!-- Link para alterar a senha, com ícone de seta à direita utilizando Bootstrap Icons (bi). -->
                             </a>
                         </li>
                         <li class="mt-2">
                             <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none">
                                 <span>Informações pessoais</span>
                                 <i class="bi bi-plus-circle"></i>
+                                <!-- Link para informações pessoais, com ícone de círculo positivo à direita. -->
                             </a>
                         </li>
                         <li class="mt-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span>Notificações</span>
+                                <!-- Título para o item "Notificações" -->
                                 <div class="form-check form-switch toggle-switch">
+                                    <!-- Switch para ativar/desativar notificações -->
                                     <input class="form-check-input" type="checkbox" id="toggleNotifications" checked>
+                                    <!-- Checkbox estilizado como um switch, que está ativado por padrão (checked). -->
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
+
                 <hr>
+                <!-- Linha horizontal para separar seções dentro do cartão -->
+
                 <div class="mb-3">
                     <h6>Mais</h6>
+                    <!-- Subtítulo para a seção "Mais" -->
                     <ul class="list-unstyled">
                         <li>
                             <a href="#" class="text-decoration-none">Política de privacidade</a>
+                            <!-- Link para a política de privacidade. -->
                         </li>
                         <li class="mt-2">
                             <a href="#" class="text-decoration-none">Termos e condições</a>
+                            <!-- Link para os termos e condições. -->
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
- 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para carregar os componentes JavaScript do Bootstrap, necessário para funcionalidades interativas. -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- Script para ícones Ionicons -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!-- Script alternativo para navegadores que não suportam módulos -->
+
 </body>
 </html>

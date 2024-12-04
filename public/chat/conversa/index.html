@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Responsivo</title>
+ 
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    .chat-container {
+      max-width: 400px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+    }
+    .chat-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .profile-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      margin-top: 15px;
+    }
+    .chat-bubble {
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 15px;
+    }
+    .bubble-sent {
+      background-color: #e9f5ff;
+      align-self: flex-start;
+    }
+    .bubble-received {
+      background-color: #d1e7dd;
+      align-self: flex-end;
+    }
+    .chat-input {
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+
+    <div class="chat-header">
+      <button class="btn btn-light">
+        <i class="bi bi-chevron-left"></i>
+    </button>
+      <img
+        src="Ellipse 23.png"
+        alt="Profile Picture"
+        class="profile-pic me-2"
+      >
+      <div>
+        <h6 class="mb-0">Kondzilla</h6>
+        <small>Visto 10 min atrás</small>
+      </div>
+    </div>
+    
+ 
+    <div class="chat-messages">
+      <div class="chat-bubble bubble-sent">
+        Olá! Tudo bem? Estou entrando em contato devido à grande repercussão que seu vídeo teve nas redes sociais.
+      </div>
+      <div class="chat-bubble bubble-received">
+        Olá! Estou ótimo, e você? 
+      </div>
+      <div class="chat-bubble bubble-received">
+        Fico muito contente que grandes produtoras como vocês tenham se interessado, é um enorme prazer!
+      </div>
+      <div class="chat-bubble bubble-sent">
+        Estou bem! O prazer é todo nosso em ver que estamos nos tornando cada vez mais referência no meio de artistas incríveis, assim como você. <br>
+        Mas me conta um pouco mais sobre você. Há quanto tempo está no ramo artístico? Já participou de algum projeto?
+      </div>
+    </div>
+    
+    
+    <div class="chat-input d-flex align-items-center">
+      <input
+        type="text"
+        class="form-control me-2"
+        placeholder="Digite sua mensagem..."
+      >
+      <button class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

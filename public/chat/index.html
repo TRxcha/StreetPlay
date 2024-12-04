@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats Recentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .header {
+            background: blueviolet;
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .search-bar {
+            margin-top: 10px;
+            background-color: rgb(179, 174, 174);
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .text-primary{
+            text-decoration: none;
+            color: black;
+        }
+        .tab-btns {
+            background-color: #f0f0f0;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .tab-btns button {
+            border: none;
+            background: none;
+            flex: 1;
+            padding: 10px 15px;
+            color: #6c757d;
+            font-weight: bold;
+        }
+        .tab-btns button.active {
+            background-color: white;
+            color: #4a4aa8;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .chat-list {
+            margin-top: 20px;
+        }
+        .chat-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .chat-item img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        .chat-item .chat-info {
+            flex: 1;
+            margin-left: 10px;
+        }
+        .chat-item .chat-info h6 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .chat-item .chat-info p {
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+        #link{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+
+            <a id="link" href="#"><i class="bi bi-chevron-left"></i></a>
+
+        <span>StreetPlay</span>
+        <img src="img_logo.png" alt="Logo" width="40">
+    </header>
+ 
+    <div class="container mt-3">
+        <div class="search-bar p-2">
+            <div class="input-group">
+                <span class="input-group-text bg-transparent border-0">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input type="text" class="form-control border-0" placeholder="Search">
+            </div>
+        </div>
+ 
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Chats recentes</h5>
+            <a href="#" class="text-primary">+ Nova mensagem</a>
+        </div>
+ 
+        <div class="tab-btns d-flex mt-3">
+            <button class="active">Chats</button>
+            <button>Grupos</button>
+        </div>
+ 
+        <div class="chat-list">
+           
+            <div class="chat-item">
+                <a id="link" href="conversa/index.html"><img src="conversa/Ellipse 23.png" alt="Kondzilla"></a>
+                <div class="chat-info">
+                    <h6>Kondzilla</h6>
+                    <p>Mas me conta...</p>
+                </div>
+                <span class="text-muted">3:02 PM</span>
+            </div>
+            <div class="chat-item">
+                <img src="Ellipse 2.png" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Rodrigo GR6</h6>
+                    <p>Claro! Só um min...</p>
+                </div>
+                <span class="text-muted">2:02 PM</span>
+            </div>
+            <div class="chat-item">
+                <img src="Ellipse 2 (1).png" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Mano Brown</h6>
+                    <p>Até mais Brown!</p>
+                </div>
+                <span class="text-muted">2:41 AM</span>
+            </div>
+            <div class="chat-item">
+                <img src="Ellipse 2 (2).png" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Mc PH</h6>
+                    <p>Enviarei alguns ...</p>
+                </div>
+                <span class="text-muted">5:27 AM</span>
+            </div>
+            <div class="chat-item">
+                <img src="Ellipse 2 (3).png" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Ice Blue</h6>
+                    <p>Ok!</p>
+                </div>
+                <span class="text-muted">7:16 PM</span>
+            </div>
+            <div class="chat-item">
+                <img src="Ellipse 2 (4).png" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Dexter</h6>
+                    <p>Tenho dificulda...</p>
+                </div>
+                <span class="text-muted">9:02 AM</span>
+            </div>
+        </div>
+    </div>
+ 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
