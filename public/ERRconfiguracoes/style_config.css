@@ -1,0 +1,18 @@
+.settings-header {
+    background-color: #4a4aa8;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.settings-card {
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.settings-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.toggle-switch {
+    margin-right: 10px;
+}

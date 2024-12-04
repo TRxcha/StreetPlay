@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="img_title">
+    <img src="/inicio/img_logo.png" alt="">    
+  </div>
+  <div class="login-container">
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="login-button">Entrar</button>
+      <div class="extra-links">
+        <a href="../ERRlogin/ERRalterar_senha/index.html">Esqueceu a senha?</a>
+        <a href="../ERRcadastro/cadastro.html">Criar uma conta</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async function(event) {
+      event.preventDefault(); // Evita o envio padrão do formulário
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Envio dos dados para o backend
+      try {
+        const response = await fetch('http://localhost:7777/login', {
+          method: 'POST', // Método POST para login
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            password,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Erro ao fazer login');
+        }
+
+        const data = await response.json();
+        
+        // Redireciona para outra página se o login for bem-sucedido
+        if (data.message === 'foi caralho') { // Verifica a mensagem retornada
+          window.location.href = '../inicial/index.html'; // Altere para a URL da página desejada
+        }
+
+      } catch (error) {
+        console.error(error);
+        alert('Erro ao fazer login: ' + error.message);
+      }
+    });
+  </script>
+</body>
+</html>

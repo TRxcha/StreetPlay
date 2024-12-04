@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="/public/cadastro/cadastro.css">
+</head>
+<body>
+  <div class="img_title">
+    <img src="/inicio/img_logo.png" alt="">    
+  </div>
+  <div class="login-container">
+    <form id="cadastroForm">
+      <div class="input-group">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="number">Número</label>
+        <input type="number" id="number" name="number" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Criar Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirmar Senha</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <button type="submit" class="login-button">Cadastrar</button>
+      <div class="extra-links">
+        <a href="../ERRlogin/login.html">Já tem uma conta?</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('cadastroForm').addEventListener('submit', async function(event) {
+      event.preventDefault(); // Evita o envio padrão do formulário
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const number = document.getElementById('number').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+
+      // Validação simples para verificar se as senhas coincidem
+      if (password !== confirmPassword) {
+        alert('As senhas não coincidem!');
+        return;
+      }
+
+      // Envio dos dados para o backend
+      try {
+        const response = await fetch('http://localhost:7777/cadastrar', { // URL da sua API
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            name,
+            password,
+            number
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Erro ao cadastrar usuário');
+        }
+
+        const data = await response.json();
+        alert('Usuário cadastrado com sucesso!');
+        window.location.href = '../ERRlogin/login.html'
+        // Redirecionar ou limpar o formulário, se necessário
+      } catch (error) {
+        console.error(error);
+        alert('Erro ao cadastrar: ' + error.message);
+      }
+    });
+  </script>
+</body>
+</html>

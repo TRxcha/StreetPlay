@@ -66,3 +66,18 @@ body, html {
     text-align: justify;
     overflow-y: auto;
 }
+.navbar-not {
+    position: relative;
+    padding: 20px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    right: 28px;
+}
+
+.navbar-not h3 {
+    color: blueviolet;
+}
