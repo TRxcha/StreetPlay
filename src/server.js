@@ -45,19 +45,32 @@ app.post('/login', async (req, res) => {
     }
 });
 
-app.put('/:id', async (req, res) => {
-    const users = await prisma.user.update({
-        where: {
-            id: req.params.id
-        },
-        data: {
-            email: req.body.email,
-            name: req.body.name,
-            age: req.body.age
+app.put('/:email/rec', async (req, res) => {
+    const { email } = req.params;
+    const { newPassword } = req.body;
+
+    try {
+        // Aqui você deve adicionar lógica para verificar se o email existe
+        const user = await prisma.user.findUnique({
+            where: { email: email }
+        });
+
+        if (!user) {
+            return res.status(404).json({ message: 'Usuário não encontrado' });
         }
-    })
-    res.status(200).json(users)
-    })
+
+        // Atualiza a senha do usuário  
+        const updatedUser = await prisma.user.update({
+            where: { email: email },
+            data: { password: newPassword }, // Certifique-se de hash a senha antes de salvar
+        });
+
+        res.status(200).json(updatedUser);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Erro ao alterar a senha' });
+    }
+});
 
 
 

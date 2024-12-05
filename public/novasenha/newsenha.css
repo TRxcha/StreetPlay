@@ -5,13 +5,36 @@
   }
   
   body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: blueviolet;
+  }
+  
+  header {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .navbar-not {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    justify-content: left;
+    margin-top: -4%;
+    margin-right: 10px;
+  }
+  
+  .navbar_btn{
+    color: black;
+  }
+  
+  main {
+    padding: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: blueviolet;
   }
   
   .img_title {
@@ -24,7 +47,7 @@
   }
   
   .login-container {
-    width: 100%;
+    width: 20.5rem;
     max-width: 370px;
     padding: 20px;
   }

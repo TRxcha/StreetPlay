@@ -1,0 +1,88 @@
+<nav class="navbar navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="navbar-toggleri"><ion-icon name="menu-outline"></ion-icon>
+                </span>
+            </button>
+            <div class="title">
+                <h1 class="title_2">STREETPLAY</h1>
+            </div>
+            <a class="navbar-brand" href="../venda/vendas.html">
+                <ion-icon name="cart-outline"></ion-icon>
+            </a>
+        </nav>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabel">MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="link-menu" href="https://www.instagram.com/streetplayapp/" target="_blank"><strong><i class="fa-solid fa-user-plus"></i> SOBRE NÓS</strong></a></li>
+                            <li class="list-group-item"><a class="link-menu" href="../configuracoes/index.html"><strong><i class="fa-solid fa-gear"></i> CONFIGURAÇÕES</strong></a></li>
+                            <li class="list-group-item"><a class="link-menu" href="../chat/index.html"><strong><i class="fa-regular fa-comments"></i> CHAT</strong></a></li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="../inicial/index.html" class="link_home"><h1 class="title_2">STREETPLAY</h1></a>
+
+        .link_home{
+        text-decoration: none;
+        color: blueviolet;
+        }
+
+        <nav class="navbar-not"> <!-- Barra de navegação personalizada -->
+            <a class="navbar_btn" href="../inicio/inicio.html"> <!-- Link para a página inicial -->
+                <ion-icon name="arrow-back-outline"></ion-icon> <!-- Ícone de voltar utilizando Ionicons -->
+            </a>
+        </nav>
+
+ @media (max-width: 400px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .extra-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .extra-links a {
+    margin-top: 5px;
+  }
+  
+  .extra-links a:hover {
+    color: #2980b9;
+  }
+  
+  @media (max-width: 400px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    .extra-links {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .extra-links a {
+      margin-top: 5px;
+    }
+  }
+  .navbar-not {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    justify-content: left;
+    margin-top: -4%;
+    margin-right: 10px;
+  }
+}
+
+<b><a class="nav-link" aria-current="page" href="../inicial/index.html">RECENTES</a></b>
+
