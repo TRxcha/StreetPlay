@@ -11,15 +11,22 @@
   <title>Cadastro</title>
   <!-- Título da página que aparece na aba do navegador. -->
 
-  <link rel="stylesheet" href="/public/cadastro/cadastro.css">
+  <link rel="stylesheet" href="cadastro.css">
   <!-- Link para o arquivo CSS externo que estiliza a página de cadastro. -->
 </head>
 
 <body>
   <!-- Início do corpo da página -->
+  <header>
+    <nav class="navbar-not"> <!-- Barra de navegação personalizada -->
+      <a class="navbar_btn" href="../inicio/inicio.html"> <!-- Link para a página inicial -->
+        <ion-icon name="chevron-back-outline"></ion-icon> <!-- Ícone de voltar utilizando Ionicons -->
+      </a>
+    </nav>
+  </header>
 
   <div class="img_title">
-    <img src="/public/inicio/img_logo.png" alt="">
+    <img src="../inicio/img_logo.png" alt="">
     <!-- Imagem do logo do site ou aplicativo, que pode servir como um cabeçalho visual. -->
   </div>
 
@@ -68,7 +75,7 @@
       <!-- Botão para enviar o formulário, com texto "Cadastrar". -->
 
       <div class="extra-links">
-        <a href="../ERRlogin/login.html">Já tem uma conta?</a>
+        <a href="../login/login.html">Já tem uma conta?</a>
         <!-- Link que redireciona os usuários que já têm uma conta para a página de login. -->
       </div>
     </form>
@@ -111,7 +118,7 @@
 
         const data = await response.json();
         alert('Usuário cadastrado com sucesso!');
-        window.location.href = '../ERRlogin/login.html'
+        window.location.href = '../login/login.html'
         // Redirecionar ou limpar o formulário, se necessário
       } catch (error) {
         console.error(error);
@@ -119,6 +126,8 @@
       }
     });
   </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- Script para ícones Ionicons -->
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!-- Script alternativo para navegadores que não suportam módulos -->
 </body>
 
 </html>

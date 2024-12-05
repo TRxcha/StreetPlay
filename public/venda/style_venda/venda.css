@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,53 +12,108 @@ body {
 }
 
 header {
-    position: relative;
-    justify-content: center;
-}
-
-.navbar2 {
-    position: relative;
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 120px;
-    right: 63.5px;
-}
-
-.nav-med ul{
-    justify-content: center;
-    gap: 100px;
-}
-
-.card-venda {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.card-v {
-    width: 9.5rem;
-    border-radius: 8px;
+    background-color: white;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 20px;
 }
 
-.card-v img {
-    width: 100%;
-    height: auto;
-}
-
-.card-content-v h3 {
-    font-size: 0.8rem;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 8px;
-    color: black;
+.title_2 {
+    margin-top: 15%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    color: blueviolet;
+}
+
+.title_2 img {
+    margin-top: 0%;
+    width: 25%;
+    height: 20%;
+}
+
+.navbar button{
+    border: none;
+}
+
+.modal {
+    width: 300px;
+}
+
+.modal-content {
+    width: 300px;
+}
+
+.modal-header button{
+    color: black;
+}
+
+.modal-body ul li {
+    margin-left: -12px;
+}
+
+.modal-footer button {
+    color: white;
+}
+
+.list-group-item {
+    margin-left: 1px;
+}
+
+.list-group-item:hover {
+    background-color: blueviolet;
+}
+
+.nav-med ul {
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.nav-underline {
+    justify-content: center;
+}
+
+.nav-item a{
+    margin-top: 10%;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.nav-item a:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.principal p {
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3%;
+    margin-left: 5%;
+    color: blueviolet;
+}
+
+.principal section{
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.principal section img {
+    width: 30%;
+    height: auto;
 }
 .rodape {
     padding: 50px 0;
@@ -123,6 +182,38 @@ header {
     text-decoration: none;
     color: black;
 }
-.nav-link{
-    text-decoration: underline;
+.card-venda {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.card-v {
+    width: 9.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card-v img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content-v h3 {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.link_home{
+    text-decoration: none;
+    color: blueviolet;
+}
+.nav-item #selected{
+    font-size: 0.9rem;
 }

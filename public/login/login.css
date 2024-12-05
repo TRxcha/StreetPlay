@@ -5,16 +5,46 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   background-color: blueviolet;
 }
 
+header {
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.navbar-not {
+  position: relative;
+  padding: 40px;
+  display: flex;
+  justify-content: left;
+  margin-top: -4%;
+  margin-right: 10px;
+}
+
+.navbar_btn{
+  color: black;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .img_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
   justify-content: center;
   align-items: center;
 }

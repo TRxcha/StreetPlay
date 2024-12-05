@@ -100,3 +100,11 @@
       margin-top: 5px;
     }
   }
+  .navbar-not {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    justify-content: left;
+    margin-top: -4%;
+    margin-right: 10px;
+  }

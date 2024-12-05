@@ -16,22 +16,44 @@
 
 <body>
     <header>
-        <nav class="navbar2">
-            <a class="navbar-brand" href="../inicial/index.html">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-            </a>
+        <nav class="navbar navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="navbar-toggleri"><ion-icon name="menu-outline"></ion-icon>
+                </span>
+            </button>
             <div class="title">
-                <h1 class="title_2">STREETPLAY</h1>
+                <h1 class="title_2"><a class="link_home" href="../inicial/index.html">STREETPLAY</a></h1>
             </div>
+            <a class="navbar-brand" href="../venda/vendas.html">
+                <ion-icon name="cart-outline"></ion-icon>
+            </a>
         </nav>
-
+      
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabel">MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+      
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="link-menu" href="#"><strong><i class="fa-solid fa-user-plus"></i> SOBRE NÓS</strong></a></li> <!--Linkar-->
+                            <li class="list-group-item"><a class="link-menu" href="#"><strong><i class="fa-solid fa-gear"></i> CONFIGURAÇÕES</strong></a></li> <!--Linkar-->
+                            <li class="list-group-item"><a class="link-menu" href="#"><strong><i class="fa-regular fa-comments"></i> CHAT</strong></a></li> <!--Linkar-->
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="nav-med">
             <ul class="nav nav-underline">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="../compra/compra.html">COMPRA</a>
-                </li>
+                </li>   
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="venda_mrkd">VENDA</a>
+                    <b><a class="nav-link" id="selected" href="#">VENDA</a></b>
                 </li>
             </ul>
         </div>
@@ -91,22 +113,21 @@
         <div class="nav-inferior">
             <ul class="lista">
                 <li class="list_inf">
-                    <a href="#">
-                        <span class="icon"><ion-icon name="home-sharp"></ion-icon>
-                        </span>
-                        <span class="text">Início</span>
+                    <a href="../inicial/index.html">
+                        <span class="icon"><ion-icon name="home-sharp"></ion-icon></span> <!-- Ícone de início -->
+                        <span class="text">Início</span> <!-- Texto do link -->
                     </a>
                 </li>
                 <li class="list_inf">
-                    <a href="#">
-                        <span class="icon"><ion-icon name="radio-outline"></ion-icon></span>
-                        <span class="text">Stream</span>
+                    <a href="../live/index.html">
+                        <span class="icon"><ion-icon name="radio-outline"></ion-icon></span> 
+                        <span class="text">Stream</span> 
                     </a>
                 </li>
                 <li class="list_inf">
-                    <a href="#">
-                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-                        <span class="text">Perfil</span>
+                    <a href="../perfil/profile.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span> 
+                        <span class="text">Perfil</span> 
                     </a>
                 </li>
             </ul>

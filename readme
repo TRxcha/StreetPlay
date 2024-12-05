@@ -10,7 +10,7 @@ Para o funcionamento correto da aplicação é necessário executar:
         node --watch src/server.js (reinicia o serer a cada alteração salva)
     //Para vizualizar o banco de dados
         npx prisma studio
-Estenções sugeridas:
+Extenções sugeridas:
     Intelicode
     json
     npm intellisense
