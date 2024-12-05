@@ -1,22 +1,125 @@
-body {
-  background-color: blueviolet;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.card {
-  border-radius: 15px;
-  padding: 20px;
-  width: 90%;
-  max-width: 400px;
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: blueviolet;
+}
+
+header {
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.navbar-not {
+  position: relative;
+  padding: 40px;
+  display: flex;
+  justify-content: left;
+  margin-top: -4%;
+  margin-right: 10px;
+}
+
+.navbar_btn{
+  color: black;
+}
+
+main {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 21.5rem;
+  height: 25.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.btn-purple {
-  background-color: #3498db;
+
+.header {
+  background: linear-gradient(90deg, #5e00a6, #5e00a6 );
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+}
+
+.password-field .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-save {
+  background: linear-gradient(90deg, #5e00a6, #9b00ff);
   color: white;
   border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-save:hover {
+  background: linear-gradient(90deg, #9b00ff, #5e00a6);
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 300px;
+  }
+
+  .header h1 {
+      font-size: 1.8rem;
+  }
+
+  .btn-save {
+      font-size: 1.1rem;
+  }
 }

@@ -11,68 +11,77 @@
   <title>Cadastro</title>
   <!-- Título da página que aparece na aba do navegador. -->
 
-  <link rel="stylesheet" href="/public/cadastro/cadastro.css">
+  <link rel="stylesheet" href="../cadastro/cadastro.css">
   <!-- Link para o arquivo CSS externo que estiliza a página de cadastro. -->
 </head>
 
 <body>
   <!-- Início do corpo da página -->
+  <header>
+    <nav class="navbar-not"> <!-- Barra de navegação personalizada -->
+      <a class="navbar_btn" href="../inicio/inicio.html"> <!-- Link para a página inicial -->
+        <ion-icon name="arrow-back-outline"></ion-icon> <!-- Ícone de voltar utilizando Ionicons -->
+      </a>
+    </nav>
+  </header>
 
-  <div class="img_title">
-    <img src="/public/inicio/img_logo.png" alt="">
-    <!-- Imagem do logo do site ou aplicativo, que pode servir como um cabeçalho visual. -->
-  </div>
+  <main>
+    <div class="img_title">
+      <img src="../inicio/img_logo.png" alt="">
+      <!-- Imagem do logo do site ou aplicativo, que pode servir como um cabeçalho visual. -->
+    </div>
 
-  <div class="login-container">
-    <!-- Contêiner principal para o formulário de cadastro. -->
+    <div class="login-container">
+      <!-- Contêiner principal para o formulário de cadastro. -->
 
-    <form id="cadastroForm">
-      <!-- Formulário com o ID "cadastroForm" para capturar os dados do usuário. -->
+      <form id="cadastroForm">
+        <!-- Formulário com o ID "cadastroForm" para capturar os dados do usuário. -->
 
-      <div class="input-group">
-        <label for="name">Nome Completo</label>
-        <!-- Rótulo para o campo de entrada de nome completo. -->
-        <input type="text" id="name" name="name" required>
-        <!-- Campo de entrada para o nome completo, obrigatório (required). -->
-      </div>
+        <div class="input-group">
+          <label for="name">Nome Completo</label>
+          <!-- Rótulo para o campo de entrada de nome completo. -->
+          <input type="text" id="name" name="name" required>
+          <!-- Campo de entrada para o nome completo, obrigatório (required). -->
+        </div>
 
-      <div class="input-group">
-        <label for="email">Email</label>
-        <!-- Rótulo para o campo de entrada de email. -->
-        <input type="email" id="email" name="email" required>
-        <!-- Campo de entrada para email, com validação de formato e obrigatório (required). -->
-      </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <!-- Rótulo para o campo de entrada de email. -->
+          <input type="email" id="email" name="email" required>
+          <!-- Campo de entrada para email, com validação de formato e obrigatório (required). -->
+        </div>
 
-      <div class="input-group">
-        <label for="number">Número</label>
-        <!-- Rótulo para o campo de entrada de número. -->
-        <input type="number" id="number" name="number" required>
-        <!-- Campo de entrada para número (ex: telefone), obrigatório (required). -->
-      </div>
+        <div class="input-group">
+          <label for="number">Número</label>
+          <!-- Rótulo para o campo de entrada de número. -->
+          <input type="number" id="number" name="number" required>
+          <!-- Campo de entrada para número (ex: telefone), obrigatório (required). -->
+        </div>
 
-      <div class="input-group">
-        <label for="password">Criar Senha</label>
-        <!-- Rótulo para o campo de entrada de senha. -->
-        <input type="password" id="password" name="password" required>
-        <!-- Campo de entrada para criar uma senha, obrigatório (required). -->
-      </div>
+        <div class="input-group">
+          <label for="password">Criar Senha</label>
+          <!-- Rótulo para o campo de entrada de senha. -->
+          <input type="password" id="password" name="password" required>
+          <!-- Campo de entrada para criar uma senha, obrigatório (required). -->
+        </div>
 
-      <div class="input-group">
-        <label for="confirm-password">Confirmar Senha</label>
-        <!-- Rótulo para o campo de confirmação de senha. -->
-        <input type="password" id="confirm-password" name="confirm-password" required>
-        <!-- Campo de entrada para confirmar a senha, obrigatório (required). -->
-      </div>
+        <div class="input-group">
+          <label for="confirm-password">Confirmar Senha</label>
+          <!-- Rótulo para o campo de confirmação de senha. -->
+          <input type="password" id="confirm-password" name="confirm-password" required>
+          <!-- Campo de entrada para confirmar a senha, obrigatório (required). -->
+        </div>
 
-      <button type="submit" class="login-button">Cadastrar</button>
-      <!-- Botão para enviar o formulário, com texto "Cadastrar". -->
+        <button type="submit" class="login-button">Cadastrar</button>
+        <!-- Botão para enviar o formulário, com texto "Cadastrar". -->
 
-      <div class="extra-links">
-        <a href="../ERRlogin/login.html">Já tem uma conta?</a>
-        <!-- Link que redireciona os usuários que já têm uma conta para a página de login. -->
-      </div>
-    </form>
-  </div>
+        <div class="extra-links">
+          <a href="../ERRlogin/login.html">Já tem uma conta?</a>
+          <!-- Link que redireciona os usuários que já têm uma conta para a página de login. -->
+        </div>
+      </form>
+    </div>
+  </main>
 
   <script>
     document.getElementById('cadastroForm').addEventListener('submit', async function (event) {
@@ -119,6 +128,11 @@
       }
     });
   </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!-- Script para ícones Ionicons -->
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Script alternativo para navegadores que não suportam módulos -->
 </body>
 
 </html>

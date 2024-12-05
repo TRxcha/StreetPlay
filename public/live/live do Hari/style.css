@@ -169,3 +169,7 @@ body, html {
     width: 20px;
     height: 20px;
 }
+.x-button{
+    text-decoration: none;
+    color: white;
+}

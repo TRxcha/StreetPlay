@@ -1,0 +1,148 @@
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title_2 {
+    margin-top: 15%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: blueviolet;
+}
+
+.title_2 img {
+    margin-top: 0%;
+    width: 25%;
+    height: 20%;
+}
+
+.navbar button{
+    border: none;
+}
+
+.modal {
+    width: 300px;
+}
+
+.modal-content {
+    width: 300px;
+}
+
+.modal-header button{
+    color: black;
+}
+
+.modal-body ul li {
+    margin-left: -12px;
+}
+
+.modal-footer button {
+    color: white;
+}
+
+.list-group-item {
+    margin-left: 1px;
+}
+
+.list-group-item:hover {
+    background-color: blueviolet;
+}
+
+.search-bar {
+    margin-top: 10px;
+    background-color: rgb(179, 174, 174);
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-primary {
+    text-decoration: none;
+    color: black;
+}
+
+.tab-btns {
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.tab-btns button {
+    border: none;
+    background: none;
+    flex: 1;
+    padding: 10px 15px;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.tab-btns button.active {
+    background-color: white;
+    color: #4a4aa8;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-list {
+    margin-top: 20px;
+}
+
+.chat-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-item img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.chat-item .chat-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.chat-item .chat-info h6 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.chat-item .chat-info p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+}
+.link-menu{
+    text-decoration: none;
+    color: black;
+}
+.link_home{
+    text-decoration: none;
+    color: blueviolet;
+}
+.link_chat{
+    text-decoration: none;
+    color: black;
+}

@@ -51,7 +51,7 @@ header {
 .card-content-v h3 {
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
     color: black;
     display: flex;
     justify-content: center;
@@ -119,10 +119,12 @@ header {
     color: blueviolet;
     text-decoration: double;
 }
+
 .link-menu{
     text-decoration: none;
     color: black;
 }
+
 .nav-link{
     text-decoration: underline;
 }

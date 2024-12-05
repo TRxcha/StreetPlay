@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: linear-gradient(90deg, #5e00a6, #5e00a6 );
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-save {
+    background: linear-gradient(90deg, #5e00a6, #9b00ff);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-save:hover {
+    background: linear-gradient(90deg, #9b00ff, #5e00a6);
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-save {
+        font-size: 1.1rem;
+    }
+}

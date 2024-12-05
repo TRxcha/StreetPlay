@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar Senha</title>
+  <link rel="stylesheet" href="/public/ERRlogin/ERRalterar_senha/style_altpass.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Alterar senha</h1>
+    </div>
+    <form class="form">
+      <label for="current-password">Insira sua senha atual</label>
+      <input type="password" id="current-password" placeholder="Insira sua senha atual" required>
+      
+      <label for="new-password">Nova Senha</label>
+      <div class="password-field">
+        <input type="password" id="new-password" placeholder="Nova Senha" required>
+        <button type="button" class="toggle-password"></button>
+      </div>
+
+      <label for="confirm-password">Confirmar Senha</label>
+      <input type="password" id="confirm-password" placeholder="Confirmar Senha" required>
+      
+      <button type="submit" class="btn-save">Salvar</button>
+    </form>
+  </div>
+</body>
+</html>

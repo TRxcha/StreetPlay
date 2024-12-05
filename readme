@@ -4,13 +4,13 @@ Para o funcionamento correto da aplicação é necessário executar:
     npm install -g nodemon
     npm install prisma --save-dev
     npx prisma init
-    //Para ligar o serer, 3 opções
+    //Para ligar o server, 3 opções
         npm run start (reinicia o server constantemente para uso direto, melhor opção)
         node src/serer.js (normal, ruim)
         node --watch src/server.js (reinicia o serer a cada alteração salva)
     //Para vizualizar o banco de dados
         npx prisma studio
-Estenções sugeridas:
+Extenções sugeridas:
     Intelicode
     json
     npm intellisense

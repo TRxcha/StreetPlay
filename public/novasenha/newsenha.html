@@ -5,30 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/novasenha/newsenha.css">
+    <link rel="stylesheet" href="../novasenha/newsenha.css">
 </head>
 
 <body>
-    <div class="img_title">
-        <img src="/inicio/img_logo.png" alt="">
-    </div>
-    <div class="login-container">
-        <form action="#" method="POST">
-            <div class="input-group">
-                <label for="text">Usuário ou Email</label>
-                <input type="text" id="text" name="text" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Senha Atual</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Nova Senha</label>
-                <input type="newpassword" id="newpassword" name="newpassword" required>
-            </div>
-            <button type="submit" class="login-button">Criar</button>
-        </form>
-    </div>
+    <header>
+        <nav class="navbar-not"> <!-- Barra de navegação personalizada -->
+            <a class="navbar_btn" href="../ERRlogin/login.html"> <!-- Link para a página inicial -->
+                <ion-icon name="arrow-back-outline"></ion-icon> <!-- Ícone de voltar utilizando Ionicons -->
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="img_title">
+            <img src="../inicio/img_logo.png" alt="">
+        </div>
+        <div class="login-container">
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="text">Usuário ou Email</label>
+                    <input type="text" id="text" name="text" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha Atual</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Nova Senha</label>
+                    <input type="newpassword" id="newpassword" name="newpassword" required>
+                </div>
+                <button type="submit" class="login-button">Criar</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- Script para ícones Ionicons -->
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!-- Script alternativo para navegadores que não suportam módulos -->
 </body>
 
 </html>

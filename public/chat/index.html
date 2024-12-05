@@ -3,93 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_chat.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <title>Chats Recentes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f9f9f9;
-        }
-        .header {
-            background: blueviolet;
-            color: white;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .search-bar {
-            margin-top: 10px;
-            background-color: rgb(179, 174, 174);
-            border-radius: 8px;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-        }
-        .text-primary{
-            text-decoration: none;
-            color: black;
-        }
-        .tab-btns {
-            background-color: #f0f0f0;
-            border-radius: 25px;
-            overflow: hidden;
-        }
-        .tab-btns button {
-            border: none;
-            background: none;
-            flex: 1;
-            padding: 10px 15px;
-            color: #6c757d;
-            font-weight: bold;
-        }
-        .tab-btns button.active {
-            background-color: white;
-            color: #4a4aa8;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-        }
-        .chat-list {
-            margin-top: 20px;
-        }
-        .chat-item {
-            background-color: white;
-            border-radius: 8px;
-            padding: 10px;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .chat-item img {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-        }
-        .chat-item .chat-info {
-            flex: 1;
-            margin-left: 10px;
-        }
-        .chat-item .chat-info h6 {
-            margin: 0;
-            font-size: 16px;
-        }
-        .chat-item .chat-info p {
-            margin: 0;
-            font-size: 14px;
-            color: gray;
-        }
-        #link{
-            text-decoration: none;
-            color: white;
-        }
-    </style>
 </head>
 <body>
     <header class="header">
+        <nav class="navbar navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="navbar-toggleri"><ion-icon name="menu-outline"></ion-icon>
+                </span>
+            </button>
+            <div class="title">
+                <h1 class="title_2"><a class="link_home" href="../inicial/index.html">STREETPLAY</a></h1>
+            </div>
+            <a class="navbar-brand" href="../venda/vendas.html">
+                <ion-icon name="cart-outline"></ion-icon>
+            </a>
+        </nav>
 
-            <a id="link" href="#"><i class="bi bi-chevron-left"></i></a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabel">MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
-        <span>StreetPlay</span>
-        <img src="img_logo.png" alt="Logo" width="40">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="link-menu" href="#"><strong><i class="fa-solid fa-user-plus"></i> SOBRE NÓS</strong></a></li> <!--Linkar-->
+                            <li class="list-group-item"><a class="link-menu" href="#"><strong><i class="fa-solid fa-gear"></i> CONFIGURAÇÕES</strong></a></li> <!--Linkar-->
+                            <li class="list-group-item"><a class="link-menu" href="#"><strong><i class="fa-regular fa-comments"></i> CHAT</strong></a></li> <!--Linkar-->
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
  
     <div class="container mt-3">
@@ -117,9 +72,9 @@
             <div class="chat-item">
                 <a id="link" href="conversa/index.html"><img src="conversa/Ellipse 23.png" alt="Kondzilla"></a>
                 <div class="chat-info">
-                    <h6>Kondzilla</h6>
-                    <p>Mas me conta...</p>
-                </div>
+                    <h6><a class="link_chat" href="conversa/index.html">Kondzilla</a></h6>
+                    <p>Estou bem! O pra...</p>
+                </div>               
                 <span class="text-muted">3:02 PM</span>
             </div>
             <div class="chat-item">
@@ -168,5 +123,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
