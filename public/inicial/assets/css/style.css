@@ -183,6 +183,22 @@ header {
     font-size: 0.7rem;
 }
 
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon-bar {
+    font-size: 1.5rem;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
 .rodape {
     padding: 50px 0;
     text-align: center;
