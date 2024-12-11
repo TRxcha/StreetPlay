@@ -22,18 +22,19 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 50px;
+    gap: 40px;
     right: 20px;
 }
 
 .navbar-not h3 {
     color: blueviolet;
 }
+
 .container{
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
-    padding-block: 5rem;
+    padding-block: 2.5rem;
 }
 .card__container{
     display: grid;
